@@ -2,7 +2,7 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-RUN npm install -g @taazkareem/clickup-mcp-server
+RUN npm install -g @taazkareem/clickup-mcp-server supergateway
 
 EXPOSE 8000
 
