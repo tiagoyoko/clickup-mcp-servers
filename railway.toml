@@ -1,0 +1,15 @@
+[build]
+# Define que Railway deve usar o Dockerfile
+builder = "Dockerfile"
+
+[deploy]
+# Healthcheck para garantir que o serviço está "UP"
+healthcheck_path = "/healthz"
+healthcheck_timeout = 30
+
+[env]
+# Variáveis de ambiente padrão (ou configure no painel do Railway)
+CLICKUP_API_KEY = "your_clickup_api_key"
+CLICKUP_TEAM_ID = "your_clickup_team_id"
+DOCUMENT_SUPPORT = "false"
+LOG_LEVEL = "info"
